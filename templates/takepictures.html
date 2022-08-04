@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block head%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/takepictures.css')}}">
+<title> take pictures here</title>
+
+
+{%endblock%}
+
+
+{% block body%}
+
+<h1> click on start to begin </h1>
+
+<div class="camera-wrapper">
+    <div class="video-elem">
+        <video src=""></video>
+        <canvas class="photo" hidden></canvas>
+    </div>
+    
+    <div class="camera-controls">
+        <button id="start">start</button>
+        <button id="capture">capture</button>
+        <button id="stop"> Stop </button> 
+    </div>
+
+    <div id="images"> 
+
+    </div>
+
+    
+</div>
+
+
+
+<script src="{{url_for('static',filename='js/takepictures.js')}}"></script>
+
+
+{% endblock%}

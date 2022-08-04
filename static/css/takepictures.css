@@ -1,0 +1,83 @@
+h1 {
+    color: black;
+    font-size: medium;
+    text-align: center;
+
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camera-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.camera-controls>button {
+    margin: 10px;
+}
+
+.camera-wrapper{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.video-elem {
+    border: 5px solid black;
+    width: 344px;
+    height: 237px;
+}
+
+video {
+    width: 344px;
+    height: 237px;
+}
+
+#images{
+    height: auto;
+    overflow: scroll;
+    display: flex;
+}
+
+img{
+    width: 286px;
+    height: 237px;    
+}
+
+@media screen and (max-width: 600px) {
+    video {
+
+        width: 286px;
+        height: 237px;
+    }
+    #images{
+    width: 286px;
+    height: 237px;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camera-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+}
+
+

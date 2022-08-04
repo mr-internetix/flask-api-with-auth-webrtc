@@ -1,0 +1,18 @@
+{% extends 'home.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+
+{% block body %}
+
+<div class="image-block">
+    {% for link in src %}
+        <img class="getallpic" src="{{url_for('static',filename=link)}}">
+    {% endfor %}
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{%  extends 'base.html' %}
+
+{% block head%} 
+<title> Welcome to Homepage</title>
+
+{% endblock %}
+  
+
+{% block body %}
+<div class="form-wrapper">
+    <div class="form">
+        <div class="inputfield">
+        <label for="my_file"> choose an image for upload</label>
+        <input id="fileInput" type="file"  accept="image/*" name="my_file" single required>
+       </div>
+        <div class="inputfield">
+            <input name="submitBtn" type="submit" id='submitBtn' value="submit">
+        </div> 
+    </form>
+
+</div>
+
+
+
+<script src="{{url_for('static',filename='js/home.js')}}"></script> 
+{% endblock %}
