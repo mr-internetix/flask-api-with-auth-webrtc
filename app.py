@@ -254,7 +254,7 @@ def capture():
             file.save(f"{upload_directory}/{secure_filename(file.filename)}")
         else:
             file.save(f"{upload_directory}/{secure_filename(file.filename)}")
-    return jsonifyk({"message":"image uploaded"})
+    return jsonify({"message":"image uploaded"})
 
 
 @app.get('/showallpictures')
